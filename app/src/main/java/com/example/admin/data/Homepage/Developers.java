@@ -5,13 +5,15 @@ import android.os.Bundle;
 
 import com.example.admin.data.R;
 
+import java.util.Objects;
+
 public class Developers extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_developers);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
     }
     @Override
     public boolean onSupportNavigateUp(){

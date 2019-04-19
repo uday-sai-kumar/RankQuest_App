@@ -390,7 +390,7 @@
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/main.xml:276
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_websites.xml:267
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_main.xml:422
-# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_feedback.xml:240
+# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_feedback.xml:235
 -keep class com.google.android.gms.ads.AdView { <init>(android.content.Context, android.util.AttributeSet); }
 
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_login.xml:9
@@ -414,7 +414,7 @@
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_select__colleges.xml:28
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_select.xml:22
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_register.xml:78
-# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_feedback.xml:220
+# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_feedback.xml:219
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_cutoff__select__colleges__polycet.xml:52
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_cutoff__select__colleges__pgcet.xml:53
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_cutoff__select__colleges__ecet.xml:53
@@ -443,10 +443,10 @@
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fragment__colleges__pgcet.xml:43
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fragment__colleges__ecet.xml:43
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fragment__colleges.xml:43
-# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fragment__checklist__polycet__main.xml:41
-# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fragment__checklist__pgcet__main.xml:40
-# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fragment__checklist__eamcet.xml:32
-# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fraagment__checklist__ecet__main.xml:40
+# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fragment__checklist__polycet__main.xml:36
+# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fragment__checklist__pgcet__main.xml:35
+# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fragment__checklist__eamcet.xml:28
+# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fraagment__checklist__ecet__main.xml:35
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_websites.xml:36
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_polycet__statastics__graphs.xml:42
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_polycet__cuttoff.xml:36
@@ -459,7 +459,7 @@
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_nit.xml:14
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_main.xml:33
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_icet__cutoff.xml:36
-# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_feedback.xml:30
+# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_feedback.xml:29
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_emcet__statastics__graphs.xml:42
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_ecet__statastics__graphs.xml:42
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_ecet__cutoff__result.xml:21
@@ -467,7 +467,7 @@
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_ecet__checklist.xml:35
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_eamcet__cutoff__result.xml:21
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_eamcet__checklist.xml:30
-# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_developers.xml:29
+# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_developers.xml:23
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout-v11/activity_cutoff__eamcet.xml:36
 -keep class com.google.android.material.card.MaterialCardView { <init>(android.content.Context, android.util.AttributeSet); }
 
@@ -519,7 +519,7 @@
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fragment__cutoff__polycet.xml:95
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fragment__cutoff__ecet.xml:95
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fragment__cutoff.xml:97
-# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_feedback.xml:128
+# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_feedback.xml:125
 -keep class com.google.android.material.textfield.TextInputEditText { <init>(android.content.Context, android.util.AttributeSet); }
 
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/fragment_fragment__cutoff_pgcet.xml:83
@@ -529,7 +529,7 @@
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_polycet__cuttoff.xml:60
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_pgcet__cutoff.xml:60
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_icet__cutoff.xml:60
-# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_feedback.xml:119
+# Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_feedback.xml:118
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout/activity_ecet__cutoff.xml:60
 # Referenced at /Users/udaysaikumar/AndroidStudioProjects/RankQuest-master/app/src/main/res/layout-v11/activity_cutoff__eamcet.xml:60
 -keep class com.google.android.material.textfield.TextInputLayout { <init>(android.content.Context, android.util.AttributeSet); }

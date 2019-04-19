@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/silver"
-    >
+    android:focusableInTouchMode="true">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <RelativeLayout
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,7 +40,7 @@
                 android:padding="2dp"
                 app:cardBackgroundColor="@android:color/white"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="10dp"
+                app:cardElevation="3dp"
                 app:strokeColor="@color/black_overlay"
                 app:strokeWidth="1dp">
 
@@ -91,7 +90,7 @@
                 android:padding="3dp"
                 app:cardBackgroundColor="@android:color/white"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="10dp"
+                app:cardElevation="3dp"
                 app:strokeColor="@color/black_overlay"
                 app:strokeWidth="1dp">
 
@@ -120,19 +119,14 @@
                         style="@style/EditLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginEnd="10dp"
-                        android:layout_marginBottom="20dp">
+                       android:layout_margin="5dp"
+                        android:focusableInTouchMode="true">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/bug"
+                            android:id="@+id/suggestions"
                             style="@style/TextInputEditTextTheme"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:focusableInTouchMode="true"
                             android:gravity="start"
                             android:hint="  Write Your Suggestion here "
                             android:inputType="textMultiLine"
@@ -212,29 +206,30 @@
             </com.google.android.material.card.MaterialCardView>-->
 
 
-            <RelativeLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/silver">
-
+<ProgressBar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+    android:id="@+id/progressBar"
+    />
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/button"
                     style="@style/BrandButtonStyle"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:background="@color/cutdown"
-
+                android:layout_margin="5dp"
+android:visibility="visible"
+                    app:backgroundTint="@color/white"
                     android:fontFamily="serif"
                     android:gravity="center"
                     android:text="Submit"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                     android:textSize="20sp" />
-            </RelativeLayout>
+            </FrameLayout>
 
 
             <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"

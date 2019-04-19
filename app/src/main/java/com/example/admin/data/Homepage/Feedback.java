@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
@@ -36,11 +37,22 @@ import retrofit2.Response;
 public class Feedback extends AppCompatActivity {
     public String b,r,e;
     public float t;
+    ProgressBar progressBar;
     SimpleDateFormat formatter;
     Date date;
      RatingBar ratingbar;
     Button button;
-    TextInputEditText bug;
+    TextInputEditText suggestions;
+    public  void showProgress()
+    {
+        button.setVisibility(View.INVISIBLE);
+        progressBar.setVisibility(View.VISIBLE);
+    }
+    public  void hideProgress()
+    {
+        button.setVisibility(View.VISIBLE);
+        progressBar.setVisibility(View.INVISIBLE);
+    }
     @Override
     public boolean onSupportNavigateUp(){
         finish();
@@ -51,8 +63,8 @@ public class Feedback extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
-         bug =  findViewById(R.id.bug);
-
+         suggestions =  findViewById(R.id.suggestions);
+progressBar=findViewById(R.id.progressBar);
 
 
         MobileAds.initialize(this,"ca-app-pub-1002768150287472~3177562999");
@@ -61,8 +73,8 @@ public class Feedback extends AppCompatActivity {
         adview.loadAd(adRequest);
 
 
-        ratingbar =(RatingBar) findViewById(R.id.ratingBar);
-        button =(Button) findViewById(R.id.button);
+        ratingbar = findViewById(R.id.ratingBar);
+        button =findViewById(R.id.button);
 
          formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         date = new Date();
@@ -71,18 +83,21 @@ public class Feedback extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+b=null;
+try {
+    b = suggestions.getText().toString();
+}catch (Exception e){
 
-                b=bug.getText().toString();
-
+}
                 t=ratingbar.getRating();
                 if(b.equals("")){
-                    Toast.makeText(getApplicationContext(), "Please Enter Something", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Please write suggestion", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    button.setVisibility(View.INVISIBLE);
-                    JSONObject jsonObject = new JSONObject();
+showProgress();
+JSONObject jsonObject = new JSONObject();
                     try {
-                        jsonObject.put("bug", b);
+                        jsonObject.put("suggestion", b);
                         jsonObject.put("rating", t);
                         jsonObject.put("date", formatter.format(date));
                         ApiInterfacePut apiPut = Register_Client.getService().create(ApiInterfacePut.class);
@@ -90,17 +105,19 @@ public class Feedback extends AppCompatActivity {
                         body1.enqueue(new Callback<ResponseBody>() {
                             @Override
                             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                                Toast.makeText(getApplicationContext(), "FeedBack Successfull", Toast.LENGTH_SHORT).show();
-                                button.setVisibility(View.VISIBLE);
+                                Toast.makeText(getApplicationContext(), "Feedback posted successfull", Toast.LENGTH_SHORT).show();
+                                hideProgress();
                             }
 
                             @Override
                             public void onFailure(Call<ResponseBody> call, Throwable t) {
                                 Toast.makeText(getApplicationContext(), "please check your network", Toast.LENGTH_SHORT).show();
+                                hideProgress();
                             }
                         });
                     } catch (JSONException e) {
                         e.printStackTrace();
+                        hideProgress();
                     }
                 }
             }

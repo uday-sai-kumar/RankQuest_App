@@ -83,12 +83,12 @@
 
                   <com.google.android.material.textfield.TextInputLayout
                       style="@style/EditLayout"
-
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
                       android:layout_marginStart="10dp"
                       android:layout_marginTop="16dp"
                       android:layout_marginEnd="10dp"
+                      android:focusableInTouchMode="true"
                       app:layout_constraintBottom_toBottomOf="parent"
                       app:layout_constraintEnd_toEndOf="parent"
                       app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +97,7 @@
                      <com.google.android.material.textfield.TextInputEditText
                          android:id="@+id/rank"
                          android:layout_width="match_parent"
-                         android:layout_height="60dp"
+                         android:layout_height="wrap_content"
                          style="@style/TextInputEditTextTheme"
                          android:inputType="number"
                          android:hint="Enter EAMCET Rank"
