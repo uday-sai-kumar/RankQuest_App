@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/searchview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="search colleges here...."
+            android:inputType="textPersonName" />
+
+        <ScrollView
+            android:layout_width="374dp"
+            android:layout_height="421dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"></ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>
